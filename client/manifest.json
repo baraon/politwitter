@@ -1,11 +1,11 @@
 {
-    "name": "meancore",
-    "short_name": "meancore",
+    "name": "politwitter",
+    "short_name": "politwitter",
     "start_url": ".",
     "display": "browser",
     "background_color": "#fff",
     "theme_color": "#000",
-    "description": "Applications runing on mean stack!",
+    "description": "Tracking and analyzing Twitter accounts of public U.S. Representatives",
     "icons": [{
       "src": "/client/assets/images/icon.png",
       "sizes": "128x128",

@@ -15,7 +15,7 @@ module.exports = {
   splunkUrl: 'http://splunk.org:8088/services/collector',
   splunkToken: 'replace-with-spunk',
   mongoDB: {
-    uri: process.env.MONGOHQ_URL || process.env.MONGODB_URI || 'mongodb://' + (process.env.DB_1_PORT_27017_TCP_ADDR || 'localhost') + '/meancore',
+    uri: process.env.MONGOHQ_URL || process.env.MONGODB_URI || 'mongodb://' + (process.env.DB_1_PORT_27017_TCP_ADDR || 'localhost') + '/politwitter',
     options: {
       /**
       * Uncomment to enable ssl certificate based authentication to mongodb
@@ -79,9 +79,9 @@ module.exports = {
   ldap: {
     server: {
       url: process.env.LDAP_URL || 'ldap://localhost:389',
-      bindDn: process.env.LDAP_DN || 'CN=LDAP1,OU=Service Accounts,OU=MEANcore Users,DC=MEANcore,DC=local',
+      bindDn: process.env.LDAP_DN || 'CN=LDAP1,OU=Service Accounts,OU=PoliTwitter Users,DC=PoliTwitter,DC=local',
       bindCredentials: process.env.LDAP_SECRET || 'LDAP_SECRET',
-      searchBase: process.env.LDAP_SEARCH_BASE || 'DC=MEANcore,DC=local',
+      searchBase: process.env.LDAP_SEARCH_BASE || 'DC=PoliTwitter,DC=local',
       searchFilter: process.env.LDAP_SEARCH_FILTER || '(&(objectCategory=person)(objectClass=user)(|(sAMAccountName={{username}})(mail={{username}})))' // login with username or email
     }
   },

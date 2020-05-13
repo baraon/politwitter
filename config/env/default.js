@@ -2,10 +2,10 @@
 
 module.exports = {
   app: {
-    title: 'MEANcore - MeanStack Web Projects!',
-    name: process.env.APP_NAME || 'meancore',
-    description: 'Applications running on mean stack',
-    keywords: 'mongodb, express, angular2+, typescript, node.js, mongoose, passport',
+    title: 'Politwitter',
+    name: process.env.APP_NAME || 'politwitter',
+    description: 'Tracking and analyzing Twitter accounts of public U.S. Representatives',
+    keywords: 'mongodb, express, angular2+, typescript, node.js, mongoose, passport, twitter',
     appBaseUrl: process.env.APP_BASE_URL || '/',
     apiBaseUrl: process.env.API_BASE_URL || 'api',
     defaultPage: 'index.html'
@@ -44,7 +44,7 @@ module.exports = {
     secure: false
   },
   // sessionSecret should be changed for security measures and concerns
-  sessionSecret: process.env.SESSION_SECRET || 'MEANcore',
+  sessionSecret: process.env.SESSION_SECRET || 'PoliTwitter',
   // sessionKey is the cookie session name
   sessionKey: process.env.SESSION_KEY || 'sessionId',
   sessionCollection: process.env.SESSION_COLLECTION || 'sessions',
@@ -80,7 +80,7 @@ module.exports = {
       workerSrc: false // This is not set.
     }
   },
-  illegalUsernames: ['meancore', 'administrator', 'password', 'admin', 'user',
+  illegalUsernames: ['politwitter', 'administrator', 'password', 'admin', 'user',
     'unknown', 'anonymous', 'null', 'undefined', 'api'
   ],
   aws: {
