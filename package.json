@@ -1,15 +1,10 @@
 {
-  "name": "meancore",
-  "description": "Full-Stack JavaScript  with MongoDB, Express, AngularJS, and Node.js.",
-  "version": "0.5.0-beta",
-  "meancore-version": "0.5.0-beta",
+  "name": "politwitter",
+  "description": "Tracking and analyzing Twitter accounts of public U.S. Representatives",
+  "version": "0.0.1",
   "private": false,
-  "author": "david.oravsky",
+  "author": "baraon gallegos",
   "license": "MIT",
-  "engines": {
-    "node": ">=5",
-    "npm": ">=3.0.0"
-  },
   "scripts": {
     "ng": "ng",
     "config": "node ./scripts/set-env.ts",
@@ -36,11 +31,11 @@
     "@angular/compiler": "^9.1.6",
     "@angular/core": "^9.1.6",
     "@angular/forms": "^9.1.6",
+    "@angular/localize": "^9.1.6",
     "@angular/platform-browser": "^9.1.6",
     "@angular/platform-browser-dynamic": "^9.1.6",
     "@angular/router": "^9.1.6",
     "@ng-bootstrap/ng-bootstrap": "^5.2.1",
-    "advanced-sitemap-generator": "^1.6.9",
     "async": "^3.1.0",
     "body-parser": "^1.19.0",
     "bootstrap": "^4.4.1",
@@ -122,6 +117,6 @@
     "protractor": "^6.0.0",
     "ts-node": "^8.6.2",
     "tslint": "^6.0.0",
-    "typescript": "^3.8.3"
+    "typescript": "~3.8.0"
   }
 }

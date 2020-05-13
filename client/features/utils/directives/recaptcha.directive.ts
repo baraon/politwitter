@@ -2,7 +2,14 @@ import {
     AfterViewInit, Directive, ElementRef, EventEmitter, forwardRef
     , Injector, Input, NgZone, OnInit, Output, ChangeDetectorRef
 } from '@angular/core';
-import { ControlValueAccessor, FormControl, NG_VALUE_ACCESSOR, NgControl, Validators } from '@angular/forms';
+import {
+  AbstractControl,
+  ControlValueAccessor,
+  FormControl,
+  NG_VALUE_ACCESSOR,
+  NgControl,
+  Validators
+} from '@angular/forms'
 
 import { ReCaptchaValidatorService } from '../services/recaptcha.service';
 
@@ -42,7 +49,7 @@ export class ReCaptchaDirective implements OnInit, AfterViewInit, ControlValueAc
     @Output() captchaResponse = new EventEmitter<string>();
     @Output() captchaExpired = new EventEmitter();
 
-    private control: FormControl;
+    private control: AbstractControl;
     private widgetId: number;
 
     private onChange: (value: string) => void;

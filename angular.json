@@ -46,11 +46,13 @@
               "vendorChunk": true,
               "commonChunk": true,
               "buildOptimizer": true,
-              "budgets": [{
-                "type": "initial",
-                "maximumWarning": "2mb",
-                "maximumError": "5mb"
-              }]
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
             }
           }
         },
@@ -134,5 +136,8 @@
       }
     }
   },
-  "defaultProject": "meancore"
+  "defaultProject": "meancore",
+  "cli": {
+    "analytics": "62bfc720-f219-47cb-91bc-fc3e53900fdb"
+  }
 }
